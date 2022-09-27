@@ -18,7 +18,7 @@ public class MediaGeometrica {
             if (faltas < 0) {
                 System.out.println("Valor inválido!");
                 System.out.println();
-            } else if (faltas >= 20) {
+            } else if (faltas > 20) {
                 System.out.println("Aluno " + nome + " reprovado por faltas!");
                 break;
             }
@@ -32,7 +32,7 @@ public class MediaGeometrica {
                 System.out.println("Digite sua nota 2: ");
                 nota2 = input.nextDouble();
 
-                media = Math.exp((Math.log(nota1*nota2))/2);
+                media = Math.pow(nota1 * nota2, 0.5);
 
                 System.out.println("Media: " + media);
 
