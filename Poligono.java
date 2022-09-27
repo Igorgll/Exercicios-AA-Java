@@ -28,7 +28,10 @@ public class Poligono {
             int p = (ladoA + ladoB + ladoC) / 2;
             double a = Math.sqrt(p*(p-ladoA) * (p - ladoB) * (p - ladoC));
 
-            System.out.println("A área do triângulo é: " + a);
+            String saida;
+            saida = (String.format ("A área do triângulo é de: %.1f", a));
+
+            System.out.println(saida);
         }
 
         else if (numLados == 4) {
@@ -52,7 +55,10 @@ public class Poligono {
             int lado = input.nextInt();
 
             float area = (float) (Math.sqrt(5 * (5 + 2 * (Math.sqrt(5)))) * lado * lado) / 4;
-            System.out.println("A área do pentágono é: " + area);
+
+            String saida;
+            saida = (String.format("A área do pentágono é de: %.1f", area));
+            System.out.println(saida);
 
         } else {
             System.out.println("Polígono não identificado");

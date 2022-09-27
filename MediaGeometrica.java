@@ -34,7 +34,9 @@ public class MediaGeometrica {
 
                 media = Math.pow(nota1 * nota2, 0.5);
 
-                System.out.println("Media: " + media);
+                String saida; 
+                saida = (String.format("Média: %.1f", media));
+                System.out.println(saida);
 
                 if (nota1 < 0 || nota2 < 0) {
                     System.out.println("Valor inválido!");
@@ -46,13 +48,13 @@ public class MediaGeometrica {
                     break;
                 }
 
-                else if (media > 3 && media < 5) {
-                    System.out.println("Aluno" + nome + " de Recuperação!");
+                else if (media >= 3 && media < 5) {
+                    System.out.println("Aluno " + nome + " de Recuperação!");
                     break;
                 }
 
                 else if (media > 5 && media < 6) {
-                    System.out.println("Aluno " + nome + " de Exame!");
+                    System.out.println("Aluno " + nome + " está de Exame!");
                     break;
                 }
 
