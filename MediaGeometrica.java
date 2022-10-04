@@ -53,7 +53,7 @@ public class MediaGeometrica {
                     break;
                 }
 
-                else if (media > 5 && media < 6) {
+                else if (media > 3 && media < 6) {
                     System.out.println("Aluno " + nome + " está de Exame!");
                     break;
                 }

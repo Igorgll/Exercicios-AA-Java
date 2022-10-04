@@ -20,8 +20,7 @@ public class TipoTriangulo {
 
         if (ladoA >= (ladoB + ladoC) || ladoB >= (ladoA + ladoC) || ladoC >= (ladoB + ladoA)) {
             System.out.println("A figura não é um triângulo");
-        } else if ((ladoA == ladoB && ladoA != ladoC) || (ladoA == ladoC && ladoA != ladoB)
-                || (ladoB == ladoC && ladoC != ladoA)) {
+        } else if ((ladoA == ladoB && ladoA != ladoC) || (ladoA == ladoC && ladoA != ladoB) || (ladoB == ladoC && ladoC != ladoA)) {
             tipo = "O tipo do triângulo é Isósceles!";
         } else if ((ladoA == ladoB && ladoB == ladoC)) {
             tipo = "O tipo de triângulo é equilátero!";
