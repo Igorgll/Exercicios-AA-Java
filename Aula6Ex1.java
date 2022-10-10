@@ -21,6 +21,7 @@ public class Aula6Ex1 {
 
         JOptionPane.showMessageDialog(null, msg);
     }
+    
 
     public static void main(String[] args) {
         controle();
