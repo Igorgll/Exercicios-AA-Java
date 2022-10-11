@@ -26,7 +26,7 @@ public class Aula7Ex2 {
                             tipo = "Equilátero";
                         } else if (a != b && a != c && b != c) {
                             tipo = "Escaleno";
-                        } else {
+                        } else if (a == b && a != c || a == c && a != b || b == c && b != a) {
                             tipo = "Isósceles";
                         }
                     }
