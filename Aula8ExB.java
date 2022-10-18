@@ -1,13 +1,13 @@
+import java.util.Arrays;
 import javax.swing.JOptionPane;
-import java.util.*;
 
-public class Aula8ExH {
+public class Aula8ExB {
     public static void menu() {
         String menu = "MENU", strItem = "";
         menu += "\n1 Digitar números \n2 Sair";
+        int n1, n2, n3, n4;
         char tecla;
-        int n1, n2, n3, n4, n5, menor, maior;
-        int vetor[] = new int[5];
+        int vetor[] = new int[4];
 
         do {
             strItem = JOptionPane.showInputDialog(null, menu);
@@ -15,24 +15,18 @@ public class Aula8ExH {
 
             switch (tecla) {
                 case '1':
-                    n1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o primeiro número"));
+                    n1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o primeiro número."));
                     vetor[0] = n1;
-                    n2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o segundo número"));
+                    n2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o segundo número."));
                     vetor[1] = n2;
-                    n3 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o terceiro número"));
+                    n3 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o terceiro número."));
                     vetor[2] = n3;
-                    n4 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o quarto número"));
+                    n4 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o quarto número."));
                     vetor[3] = n4;
-                    n5 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o último número"));
-                    vetor[4] = n5;
 
                     Arrays.sort(vetor);
-                    menor = vetor[0];
-                    maior = vetor[4];
-                    JOptionPane.showMessageDialog(null,
-                            menor + " foi o menor número digitado e " + maior + " foi o maior número.");
+                    JOptionPane.showMessageDialog(null, "Ordem crescente " + "\n" + Arrays.toString(vetor));
                     break;
-
                 case '2':
                     JOptionPane.showMessageDialog(null, "Programa finalizado!");
                     System.exit(0);
