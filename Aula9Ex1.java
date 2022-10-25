@@ -26,12 +26,13 @@ public class Aula9Ex1 {
                     double valores[] = new double[tamanhoVetor];
 
                     for (int i = 0; i < tamanhoVetor; i++) {
-                        cont += tamanhoVetor;
                         valores[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o valor"));
                         saldo += valores[i];
                     }
 
+                    cont += tamanhoVetor;
                     media = saldo / cont;
+
                     nome = JOptionPane.showInputDialog(null, "Digite o seu nome");
 
                     JOptionPane.showMessageDialog(null, "Valores Digitados: " + "\n" + Arrays.toString(valores));
