@@ -8,11 +8,11 @@ public class Aula9Ex2 {
         menu += "\n1- Calcular  \n2- Resultados \n3- Sair";
         char itemMenu;
         double valor = 0, multa = 0, taxaMulta = 0.02, juros, taxaJuros = 0.1;
-        double valores[] = new double[2];
-        double valorMulta[] = new double[2];
-        double valorJuros[] = new double[2];
-        double valorPagar[] = new double[2];
-        int dias[] = new int[2];
+        double valores[] = new double[4];
+        double valorMulta[] = new double[4];
+        double valorJuros[] = new double[4];
+        double valorPagar[] = new double[4];
+        int dias[] = new int[4];
 
         do {
             strItem = JOptionPane.showInputDialog(null, menu);
