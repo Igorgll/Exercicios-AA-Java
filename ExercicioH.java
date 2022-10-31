@@ -4,8 +4,8 @@ import java.util.Scanner;
 // VOLUME ← COMPRIMENTO * LARGURA * ALTURA.
 
 public class ExercicioH {
+    static Scanner read = new Scanner(System.in);
     public static void main(String [] args) {
-        Scanner read = new Scanner(System.in);
 
         System.out.println("Digite o comprimento da caixa: ");
         Double comprimento = read.nextDouble();

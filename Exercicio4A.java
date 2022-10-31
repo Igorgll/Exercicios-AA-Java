@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Exercicio4A {
+    static Scanner input = new Scanner(System.in);
     public static void main(String []args) {
-        Scanner input = new Scanner(System.in);
     
         System.out.println("Digite um número: ");
         int numero1 = input.nextInt();

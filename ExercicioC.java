@@ -4,10 +4,10 @@ import java.util.Scanner;
 // Volume Raio ** Altura 2 ←π
 
 public class ExercicioC {
+    static Scanner read = new Scanner(System.in);
     public static void main (String [] args){
         final double PI = 3.14;
 
-        Scanner read = new Scanner(System.in);
 
         System.out.println("Digite a altura da lata: ");
         double altura = read.nextDouble();

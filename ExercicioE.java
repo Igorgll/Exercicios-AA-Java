@@ -4,8 +4,8 @@ import java.util.Scanner;
 // PRESTACAO ← VALOR + (VALOR * TAXA/100) * TEMPO).
 
 public class ExercicioE {
+    static Scanner read = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
 
         System.out.println("Digite o valor: ");
         double valor = read.nextDouble();

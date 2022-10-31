@@ -10,8 +10,8 @@ import java.util.Scanner;
 // quantidade de litros (LITROS_USADOS) utilizada na viagem.
 
 public class ExercicioD {
+    static Scanner read = new Scanner(System.in);
     public static void main(String [] args) {
-        Scanner read = new Scanner(System.in);
 
         System.out.println("Digite o tempo gasto durante a viagem: ");
         int tempo = read.nextInt();

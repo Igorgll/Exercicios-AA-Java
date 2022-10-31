@@ -3,8 +3,8 @@
 import java.util.Scanner;
 
 public class ExercicioA {
+    static Scanner read = new Scanner(System.in);
     public static void main (String [] args) {
-        Scanner read = new Scanner(System.in);
 
         System.out.println("Digite a temperatura em Celsius: ");
         int celsius = read.nextInt();

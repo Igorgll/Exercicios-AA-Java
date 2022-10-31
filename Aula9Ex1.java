@@ -30,7 +30,7 @@ public class Aula9Ex1 {
                         saldo += valores[i];
                     }
 
-                    cont += tamanhoVetor;
+                    cont += tamanhoVetor;   
                     media = saldo / cont;
 
                     nome = JOptionPane.showInputDialog(null, "Digite o seu nome");
