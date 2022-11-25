@@ -2,7 +2,7 @@ import java.util.stream.IntStream;
 
 import javax.swing.JOptionPane;
 
-public class Aula12ADO {
+public class Aula12Ex1 {
     public static void main(String[] args) {
         menu();
     }
